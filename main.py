@@ -1,10 +1,13 @@
-#calculate factorial
-def fact(n):
-  if n == 0:
-    return 1
-  else:
-    return n * fact(n - 1)
-
-
-print(fact(0))
-print(fact(5))
+class player:
+  def play(self):
+    print("The player is play cricket")
+class Batsman(player):
+  def play(self):
+    print("The batsman is batting")
+class Bowler (player):
+  def play(self):
+    print("The bowler is bowling")
+batsman=Batsman()
+bowler=Bowler()
+batsman.play()
+bowler.play()
